@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFCFF4"
+    android:paddingLeft="7dp"
+    tools:context=".lyric">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter word to translate "
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/tam"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="opentamil"
+        android:text="Tamil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="opentel"
+        android:text="Telugu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/hin"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="openhin"
+        android:text="Hindi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="355dp"
+        android:layout_height="250dp"
+        android:background="#9170CD"
+        android:paddingLeft="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textColor="#050000"
+            android:textSize="34sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/urd"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="openurd"
+        android:text="Urdu"
+        app:layout_constraintBottom_toTopOf="@+id/sv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hin"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/kan"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:onClick="openkan"
+        android:text="kannada"
+        app:layout_constraintBottom_toTopOf="@+id/sv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hin"
+        app:layout_constraintVertical_bias="0.384" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

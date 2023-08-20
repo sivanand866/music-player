@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F9"
+    tools:context=".sp">
+
+    <EditText
+        android:id="@+id/spet"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#040000"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter lyric"
+        android:inputType="textPersonName"
+        android:textColor="#0B0000"
+        android:textColorHint="#020000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="330dp"
+        android:layout_height="513dp"
+        android:background="#E5A8EF"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732">
+
+        <TextView
+            android:id="@+id/sptv"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#070000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/spet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+</androidx.constraintlayout.widget.ConstraintLayout>
